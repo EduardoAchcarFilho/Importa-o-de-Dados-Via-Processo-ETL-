@@ -32,3 +32,9 @@ Algumas abordagens de tratamento feitas:
    
 
 Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão com o SQL, e Streamlit para visualização e feedback do processo.
+
+![Capturar](https://github.com/user-attachments/assets/55cdd541-3301-45b4-ba02-5aa66e19248f)
+
+![Capturar1](https://github.com/user-attachments/assets/6e2d84f9-ff1d-4ecc-88c7-1efe3b1b73c1)
+
+
