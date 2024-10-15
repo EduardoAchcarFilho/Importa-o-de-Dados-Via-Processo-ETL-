@@ -33,6 +33,7 @@ Algumas abordagens de tratamento feitas:
 Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão com o SQL, e Streamlit para visualização e feedback do processo.
 
 MAPEAMENTO:
+
 def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
     default_mappings = {
         "ID": ["ID", "Código", "Identificador"],
@@ -45,7 +46,6 @@ def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
         "Unitário": ["Unitário", "Preço Unitário", "Valor Unitário", "Unitario"],
         "CódigoBarras": ["CodigoBarras", "Código de Barras", "EAN"]
     }
-
     if not os.path.exists(file_name):
         with open(file_name, 'w', encoding='utf-8') as f:
             json.dump(default_mappings, f, indent=4)
@@ -63,15 +63,15 @@ def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
     return file_name
 
 ALGUNS DOS TRATAMENTOS:
-# Remover linhas duplicadas com base no mapeamento PRODUTO
+- Remover linhas duplicadas com base no mapeamento PRODUTO
 df = df.drop_duplicates(Produto_column_name)
-# Remover linhas onde a coluna 'Produto' tem valores nulos
+- Remover linhas onde a coluna 'Produto' tem valores nulos
 df = df.dropna(subset=[Produto_column_name])
-# Remover espaços em branco extras de uma coluna de string
+- Remover espaços em branco extras de uma coluna de string
 df[Produto_column_name] = df[Produto_column_name].str.strip()
-# Remover espaços em branco à esquerda da coluna 'Produto_column_name'
+- Remover espaços em branco à esquerda da coluna 'Produto_column_name'
 df[Produto_column_name] = df[Produto_column_name].str.lstrip()
-# Colocar todos os valores em maiúsculas
+- Colocar todos os valores em maiúsculas
 df[Produto_column_name] = df[Produto_column_name].str.upper()
 
 ![Capturar](https://github.com/user-attachments/assets/55cdd541-3301-45b4-ba02-5aa66e19248f)
