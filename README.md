@@ -35,7 +35,6 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
 
 - **MAPEAMENTO**:
 
-def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
     default_mappings = {
         ID: [ID, Código, Identificador],
         "Produto": ["Produto", "Descrição", "Item"],
