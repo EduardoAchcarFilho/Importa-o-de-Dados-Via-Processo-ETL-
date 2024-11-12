@@ -35,8 +35,9 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
 
 - **FUNÇÃO MAPEAMENTO**:
 
+def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
     default_mappings = {
-        ID: [ID, Código, Identificador],
+        "ID": ["ID", "Código", "Identificador"],
         "Produto": ["Produto", "Descrição", "Item"],
         "Unidade": ["UNIDADE", "Un", "Unidade de Medida", "Unidade"],
         "Ncm": ["NCM", "ncm", "Ncm"],
@@ -46,6 +47,7 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
         "Unitário": ["Unitário", "Preço Unitário", "Valor Unitário", "Unitario"],
         "CódigoBarras": ["CodigoBarras", "Código de Barras", "EAN"]
     }
+
     if not os.path.exists(file_name):
         with open(file_name, 'w', encoding='utf-8') as f:
             json.dump(default_mappings, f, indent=4)
@@ -61,6 +63,8 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
         with open(file_name, 'w', encoding='utf-8') as f:
             json.dump(existing_mappings, f, indent=4)
     return file_name
+
+verificar_ou_criar_mapeamento_json()
 
 - **ALGUNS DOS TRATAMENTOS**:
   
