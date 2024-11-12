@@ -65,7 +65,9 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
 - **ALGUNS DOS TRATAMENTOS**:
   
 -**Remover linhas duplicadas com base no mapeamento PRODUTO**
+
    -*df = df.drop_duplicates(Produto_column_name)*
+   
 -**Remover linhas onde a coluna 'Produto' tem valores nulos**
 df = df.dropna(subset=[Produto_column_name])
 -**Remover espaços em branco extras de uma coluna de string**
