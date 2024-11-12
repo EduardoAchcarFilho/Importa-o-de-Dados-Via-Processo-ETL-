@@ -33,7 +33,7 @@ Este é um pequeno exemplo de como implementar um aprendizado incremental.
    
 Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão com o SQL, e Streamlit para visualização e feedback do processo.
 
-- **MAPEAMENTO**:
+- **FUNÇÃO MAPEAMENTO**:
 
     default_mappings = {
         ID: [ID, Código, Identificador],
@@ -62,16 +62,17 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
             json.dump(existing_mappings, f, indent=4)
     return file_name
 
-ALGUNS DOS TRATAMENTOS:
-- Remover linhas duplicadas com base no mapeamento PRODUTO
+- **ALGUNS DOS TRATAMENTOS**:
+  
+-**Remover linhas duplicadas com base no mapeamento PRODUTO**
 df = df.drop_duplicates(Produto_column_name)
-- Remover linhas onde a coluna 'Produto' tem valores nulos
+-**Remover linhas onde a coluna 'Produto' tem valores nulos**
 df = df.dropna(subset=[Produto_column_name])
-- Remover espaços em branco extras de uma coluna de string
+-**Remover espaços em branco extras de uma coluna de string**
 df[Produto_column_name] = df[Produto_column_name].str.strip()
-- Remover espaços em branco à esquerda da coluna 'Produto_column_name'
+-**Remover espaços em branco à esquerda da coluna 'Produto_column_name'**
 df[Produto_column_name] = df[Produto_column_name].str.lstrip()
-- Colocar todos os valores em maiúsculas
+-**Colocar todos os valores em maiúsculas**
 df[Produto_column_name] = df[Produto_column_name].str.upper()
 
 ![Capturar](https://github.com/user-attachments/assets/55cdd541-3301-45b4-ba02-5aa66e19248f)
