@@ -9,9 +9,9 @@ O mapeamentos de colunas é baseado em persistência de aprendizado ,cada vez qu
 Essa abordagem garante que o mapeamento padrão sejam atualizados sempre que novas colunas forem adicionadas, permitindo um sistema mais flexível e adaptável
 Este é um pequeno exemplo de como implementar um aprendizado incremental.
 
-Algumas abordagens de tratamento feitas:
+- **Algumas abordagens de tratamento feitas**:
 
-. Remover Duplicados
+-**Remover Duplicados**
 
 . Tratar Valores Ausentes
 
