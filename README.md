@@ -35,34 +35,7 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
 
 - **FUNÇÃO MAPEAMENTO**:
 
-    def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
-     default_mappings = {
-        "ID": ["ID", "Código", "Identificador"],
-        "Produto": ["Produto", "Descrição", "Item"],
-        "Unidade": ["UNIDADE", "Un", "Unidade de Medida", "Unidade"],
-        "Ncm": ["NCM", "ncm", "Ncm"],
-        "Cest": ["CEST", "cest", "Cest"],
-        "Custo": ["Custo", "Preço de Custo", "Valor Custo"],
-        "Margem": ["Margem", "MargemLucro", "Margem de Lucro"],
-        "Unitário": ["Unitário", "Preço Unitário", "Valor Unitário", "Unitario"],
-        "CódigoBarras": ["CodigoBarras", "Código de Barras", "EAN"]
-     }
-
-    if not os.path.exists(file_name):
-        with open(file_name, 'w', encoding='utf-8') as f:
-            json.dump(default_mappings, f, indent=4)
-    else:
-        with open(file_name, 'r', encoding='utf-8') as f:
-            existing_mappings = json.load(f)
-
-        for key, possible_names in default_mappings.items():
-            if key in existing_mappings:
-                for new_name in possible_names:
-                    if new_name not in existing_mappings[key]:
-                        existing_mappings[key].append(new_name)
-        with open(file_name, 'w', encoding='utf-8') as f:
-            json.dump(existing_mappings, f, indent=4)
-    return file_name
+![Capturar](https://github.com/user-attachments/assets/ab0a8fef-ad8b-4773-8650-703a410a92fd)
 
 
 - **ALGUNS DOS TRATAMENTOS**:
