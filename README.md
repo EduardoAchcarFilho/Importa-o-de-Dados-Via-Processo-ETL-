@@ -64,18 +64,25 @@ Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão c
 
 - **ALGUNS DOS TRATAMENTOS**:
   
--**Remover linhas duplicadas com base no mapeamento PRODUTO**
+**Remover linhas duplicadas com base no mapeamento PRODUTO**
 
    -*df = df.drop_duplicates(Produto_column_name)*
    
--**Remover linhas onde a coluna 'Produto' tem valores nulos**
-df = df.dropna(subset=[Produto_column_name])
+**Remover linhas onde a coluna 'Produto' tem valores nulos**
+
+   -*df = df.dropna(subset=[Produto_column_name])*
+   
 -**Remover espaços em branco extras de uma coluna de string**
-df[Produto_column_name] = df[Produto_column_name].str.strip()
+
+   -*df[Produto_column_name] = df[Produto_column_name].str.strip()*
+   
 -**Remover espaços em branco à esquerda da coluna 'Produto_column_name'**
-df[Produto_column_name] = df[Produto_column_name].str.lstrip()
+
+   -*df[Produto_column_name] = df[Produto_column_name].str.lstrip()*
+   
 -**Colocar todos os valores em maiúsculas**
-df[Produto_column_name] = df[Produto_column_name].str.upper()
+
+   -*df[Produto_column_name] = df[Produto_column_name].str.upper()*
 
 ![Capturar](https://github.com/user-attachments/assets/55cdd541-3301-45b4-ba02-5aa66e19248f)
 
