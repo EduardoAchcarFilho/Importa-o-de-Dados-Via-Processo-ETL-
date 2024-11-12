@@ -33,12 +33,12 @@ Este é um pequeno exemplo de como implementar um aprendizado incremental.
    
 Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão com o SQL, e Streamlit para visualização e feedback do processo.
 
-- **FUNÇÃO MAPEAMENTO**:
+- **FUNÇÃO MAPEAMENTO DE COLUNAS**:
 
 ![Capturar](https://github.com/user-attachments/assets/ab0a8fef-ad8b-4773-8650-703a410a92fd)
 
 
-- **ALGUNS DOS TRATAMENTOS**:
+- **MAIS ALGUNS DOS TRATAMENTOS**:
   
 **Remover linhas duplicadas com base no mapeamento PRODUTO**
 
