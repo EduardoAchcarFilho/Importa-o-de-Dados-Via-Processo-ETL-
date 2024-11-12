@@ -13,30 +13,29 @@ Este é um pequeno exemplo de como implementar um aprendizado incremental.
 
 -**Remover Duplicados**
 
-. Tratar Valores Ausentes
+-**Tratar Valores Ausentes**
 
-. Conversão de Tipos de Dados
+-**Conversão de Tipos de Dados**
    
-. Formatação de Strings
+-**Formatação de Strings**
 
-. Calcular Marguem de Lucro
+-**Calcular Marguem de Lucro**
     
-. Cálculo de Colunas Adicionais
+-**Cálculo de Colunas Adicionais**
  
-. Normalização ou Padronização
+-**Normalização ou Padronização**
 
-. Agrupamento e Agregação
+-**Agrupamento e Agregação**
 
-. Filtragem de Dados
+-**Filtragem de Dados**
      
-. Aplicação de Regras de Negócio Específicas
+-**Aplicação de Regras de Negócio Específicas**
    
 Utilizei a biblioteca pandas para manipulação de dados, pyodbc para conexão com o SQL, e Streamlit para visualização e feedback do processo.
 
-MAPEAMENTO:
+- **MAPEAMENTO**:
 
 def verificar_ou_criar_mapeamento_json(file_name='column_mappings.json'):
-
     default_mappings = {
         ID: [ID, Código, Identificador],
         "Produto": ["Produto", "Descrição", "Item"],
