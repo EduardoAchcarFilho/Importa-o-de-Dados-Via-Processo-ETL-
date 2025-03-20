@@ -1,7 +1,7 @@
 ## Importação de Dados (Via Processo ETL)
 
 Vou postar um outro projeto que eu usava, é um app de Importação de Dados (Via Processo ETL).
-A unica interração era selecionar o arquivo .csv e quando necessário mapear novas colunas mas aqui decidi colocar com MAIS componentes para melhor visualização e compreenção dele.
+A unica interração era selecionar o arquivo .csv e quando necessário mapear novas colunas. Mas aqui decidi colocar com MAIS componentes para melhor visualização e compreenção dele.
 
 Este código tem a finalidade de realizar o mapeamento(das colunas do arquivo.csv), tratamento e inserção em um banco de dados SQL, e como o banco destino não mudava sua estrutura, decidi automatizar este processo.
 
