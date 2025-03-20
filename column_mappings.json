@@ -1,0 +1,58 @@
+{
+    "ID": [
+        "ID",
+        "C\u00f3digo",
+        "Identificador",
+        "ID_Prod"
+    ],
+    "Produto": [
+        "Produto",
+        "Descri\u00e7\u00e3o",
+        "Item",
+        "DescProd"
+    ],
+    "Unidade": [
+        "UNIDADE",
+        "Un",
+        "Unidade de Medida",
+        "Unidade",
+        "Medida"
+    ],
+    "Ncm": [
+        "NCM",
+        "ncm",
+        "Ncm",
+        "NcM"
+    ],
+    "Cest": [
+        "CEST",
+        "cest",
+        "Cest",
+        "CeSt"
+    ],
+    "Custo": [
+        "Custo",
+        "Pre\u00e7o de Custo",
+        "Valor Custo",
+        "Custo1"
+    ],
+    "Margem": [
+        "Margem",
+        "MargemLucro",
+        "Margem de Lucro",
+        "MargemL"
+    ],
+    "Unit\u00e1rio": [
+        "Unit\u00e1rio",
+        "Pre\u00e7o Unit\u00e1rio",
+        "Valor Unit\u00e1rio",
+        "Unitario",
+        "ValorUni"
+    ],
+    "C\u00f3digoBarras": [
+        "CodigoBarras",
+        "C\u00f3digo de Barras",
+        "EAN",
+        "CdBarra"
+    ]
+}
