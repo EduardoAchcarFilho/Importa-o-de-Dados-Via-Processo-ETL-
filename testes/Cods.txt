@@ -1,0 +1,25 @@
+CREATE TABLE Produtos (
+    ID_Prod INT IDENTITY PRIMARY KEY,       -- Coluna 'ID' no CSV
+    Descricao VARCHAR(100),        -- Coluna 'Produto' no CSV
+    UN VARCHAR(10),                -- Coluna 'UNIDADE' no CSV
+    NCM VARCHAR(10),               -- Coluna 'NCM' no CSV
+    CEST VARCHAR(20)               -- Coluna 'CEST' no CSV, pode conter valores NULL
+);
+
+
+CREATE TABLE ProdPreco (
+    ID_ProdPreco INT IDENTITY PRIMARY KEY, -- Identificador automático
+    ID_Prod INT,                               -- Relaciona com ID_Prod na tabela Produtos
+    PrecoCusto DECIMAL(18, 4),                 -- Coluna 'Custo' no CSV
+    MargemLucro DECIMAL(18, 4),                -- Coluna 'Margem' no CSV
+    PrecoUnitario DECIMAL(18, 4),              -- Coluna 'Unitario' no CSV
+    FOREIGN KEY (ID_Prod) REFERENCES Produtos(ID_Prod) -- Relacionamento com Produtos
+);
+
+
+CREATE TABLE CodBarras (
+    ID_CodBarras INT IDENTITY PRIMARY KEY, -- Identificador automático
+    ID_Prod INT,                               -- Relaciona com ID_Prod na tabela Produtos
+    Cod_Barras VARCHAR(50),                    -- Coluna 'CodigoBarras' no CSV
+    FOREIGN KEY (ID_Prod) REFERENCES Produtos(ID_Prod) -- Relacionamento com Produtos
+);
